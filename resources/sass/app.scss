@@ -1,0 +1,153 @@
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+//@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+body::before{
+    display: block;
+    content: '';
+    height: 56px;
+}
+.nav-border{
+    border-bottom: 1px solid rgba(211, 211, 211,0.5);
+}
+.border-2{
+    border-bottom: 2px solid #eee;
+}
+.text-intro{
+   
+     color: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+}
+.btn-bd-download {
+    font-weight: 600;
+    color: #ffe484;
+    border-color: #ffe484;
+}
+.btn-bd-download:hover{
+    color: #000000;
+    border-color: #ffe484;
+    background-color:#ffe484;
+}
+.navbar-nav .nav-item  .nav-link.active{
+    color: #ffe484;
+    font-weight: 700;
+}
+.nav-link:hover{
+    color:#ffe484;
+}
+.nav-link.active{
+    color: #ffe484;
+}
+.intro-section {
+    background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+    // padding: 10rem 0 0 0;
+    width: 100%;
+    height: 100%;
+}
+.opacity-6{
+    opacity:0.2;
+}
+.text-golden{
+    color:#ffe484;
+}
+.bg-golden{
+    background-color: #ffe484;
+}
+.bd-golden{
+    border:1px solid #ffe484;
+}
+.bg-skyblue{
+    background-color: skyblue;
+}
+
+//home页下的 
+// 最新发布 滚动条
+.div-bannerTips{
+    padding:1rem;
+    line-height: 2;
+    border-radius: 0.25rem;
+}
+.div-icon {
+   
+    width:3rem;
+    height:3rem;
+    border:1px solid ;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.home-card{
+    border:1px solid #03fa10;
+}
+.type-html{
+    background-color: #e34c26;
+}
+.type-java{
+    background-color: #fbff03;
+}
+.type-javascript{
+    background-color: #ffe484;  
+}
+.type-php{
+    background-color: #2953fd;
+}
+.type-python{
+    background-color: #298aff;
+}
+.type-go{
+    background-color: skyblue;
+}
+.language-color{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    // border: 1px solid var(--color-primer-border-contrast);
+    border-radius: 50%;
+}   
+
+.home-news-font{
+    font-family: Futura;
+    background: linear-gradient(-125deg, #f5f79b 0%, #fbff03 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 49px;
+    letter-spacing: 5px;
+    display: inline-block;
+    font-weight: 700;
+}
+.home-news-dot{
+    width: 8px;
+    height: 8px;
+    text-align: center;
+    line-height: 8px;
+    border-radius: 50%;
+    border:1px solid #fbff03;
+    background:#fbff03;
+    display: inline-block;
+    font-weight: 700;
+ 
+    
+}
+.home-news-new{
+    display: inline-block;
+    font-size: 20px;
+}
+.home-news-new strong{
+    display: block;
+    font-size: 20px;
+    background: linear-gradient(-125deg, #298aff 0%, #2953fd 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+a{
+    text-decoration: none;
+
+}
