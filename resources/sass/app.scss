@@ -2,12 +2,12 @@
 //@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Variables
-//@import 'variables';
+@import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-icons/font/bootstrap-icons.css';
-$bg-golden:#ffe484;
+
 body::before{
     display: block;
     content: '';
