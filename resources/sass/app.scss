@@ -7,6 +7,7 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-icons/font/bootstrap-icons.css';
+$bg-golden:#ffe484;
 body::before{
     display: block;
     content: '';
@@ -24,23 +25,23 @@ body::before{
 }
 .btn-bd-download {
     font-weight: 600;
-    color: #ffe484;
-    border-color: #ffe484;
+    color: $bg-golden;
+    border-color: $bg-golden;
 }
 .btn-bd-download:hover{
     color: #000000;
-    border-color: #ffe484;
-    background-color:#ffe484;
+    border-color: $bg-golden;
+    background-color:$bg-golden;
 }
 .navbar-nav .nav-item  .nav-link.active{
-    color: #ffe484;
+    color: $bg-golden;
     font-weight: 700;
 }
 .nav-link:hover{
-    color:#ffe484;
+    color:$bg-golden;
 }
 .nav-link.active{
-    color: #ffe484;
+    color: $bg-golden;
 }
 .intro-section {
     background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
@@ -52,13 +53,13 @@ body::before{
     opacity:0.2;
 }
 .text-golden{
-    color:#ffe484;
+    color:$bg-golden;
 }
 .bg-golden{
-    background-color: #ffe484;
+    background-color: $bg-golden;
 }
 .bd-golden{
-    border:1px solid #ffe484;
+    border:1px solid $bg-golden;
 }
 .bg-skyblue{
     background-color: skyblue;
@@ -91,7 +92,7 @@ body::before{
     background-color: #fbff03;
 }
 .type-javascript{
-    background-color: #ffe484;  
+    background-color: $bg-golden;  
 }
 .type-php{
     background-color: #2953fd;
