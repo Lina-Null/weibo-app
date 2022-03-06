@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark bd-navbar  fixed-top nav-border">
     <div class="container">
-        <a href="#" class="navbar-brand text-golden">我在Weibo-App学习</a>
+        <a href="{{ route('index') }}" class="navbar-brand text-golden">我在Weibo-App学习</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,7 +55,7 @@
 
             </ul>
       
-            <a class="btn btn-bd-download d-lg-inline-block my-2 my-md-0 ms-md-2" href="#">注册</a>
+            <a class="btn btn-bd-download d-lg-inline-block my-2 my-md-0 ms-md-2" href="{{ route('user.register') }}">注册</a>
             <a class="btn btn-bd-download d-lg-inline-block my-2 my-md-0 ms-md-2" href="#">登录</a>
           </div>
     </div>
