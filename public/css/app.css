@@ -13020,6 +13020,12 @@ body::before {
   background-color: #ffe484;
 }
 
+.btn-bd-download.active {
+  color: #000000;
+  border-color: #ffe484;
+  background-color: #ffe484;
+}
+
 .navbar-nav .nav-item .nav-link.active {
   color: #ffe484;
   font-weight: 700;

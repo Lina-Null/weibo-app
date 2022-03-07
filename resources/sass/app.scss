@@ -33,6 +33,11 @@ body::before{
     border-color: $bg-golden;
     background-color:$bg-golden;
 }
+.btn-bd-download.active{
+    color: #000000;
+    border-color: $bg-golden;
+    background-color:$bg-golden;
+}
 .navbar-nav .nav-item  .nav-link.active{
     color: $bg-golden;
     font-weight: 700;

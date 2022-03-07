@@ -9,10 +9,12 @@
 </head>
 <body>
 
-    @include('layouts._header')
+    @include('register._header')
         
-       <section>
-           @yield('content')
+       <section class="p-5 bg-dark text-light text-center">
+           <div class="container ">
+               <h1>注册页</h1>
+           </div>
        </section>
       
     @include('layouts._footer')

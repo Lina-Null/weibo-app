@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark bd-navbar  fixed-top nav-border">
     <div class="container">
-        <a href="{{ route('index') }}" class="navbar-brand text-golden">我在Weibo-App学习</a>
+        <a href="{{ route('index') }}" class="navbar-brand ">我在Weibo-App学习</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -15,7 +15,7 @@
         <div class="collapse navbar-collapse " id="navmenu" >
             <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
               <li class="nav-item  col-md-auto">
-                <a class="nav-link p-2 active" href="#" >前端知识</a>
+                <a class="nav-link p-2 " href="#" >前端知识</a>
               </li>
               <li class="nav-item  col-md-auto">
                 <a class="nav-link p-2 " aria-current="true" href="#" >后端知识</a>
@@ -56,7 +56,7 @@
             </ul>
       
             <a class="btn btn-bd-download d-lg-inline-block my-2 my-md-0 ms-md-2" href="#">登录</a>
-            <a class="btn btn-bd-download d-lg-inline-block my-2 my-md-0 ms-md-2" href="{{ route('user.signup') }}">注册</a>
+            <a class="btn btn-bd-download d-lg-inline-block my-2 my-md-0 ms-md-2 active" href="{{ route('user.signup') }}">注册</a>
           </div>
     </div>
 </nav>
