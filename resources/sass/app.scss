@@ -11,7 +11,7 @@
 body::before{
     display: block;
     content: '';
-    height: 56px;
+    height: 70px;
 }
 .nav-border{
     border-bottom: 1px solid rgba(211, 211, 211,0.5);
@@ -156,4 +156,16 @@ body::before{
 a{
     text-decoration: none;
 
+}
+
+// users页面下的样式
+// .user-header-img{
+//     width:18rem;
+//     height:16rem;
+//     border: 1px solid $bg-golden;
+//     text-align: center;
+// }
+.user{
+    border: 1px solid $bg-golden;
+    border-radius: 0.25rem;
 }
