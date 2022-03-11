@@ -55,7 +55,7 @@
 
             </ul>
       
-            <a class="btn btn-bd-download d-lg-inline-block my-2 my-md-0 ms-md-2" href="#">登录</a>
+            <a class="btn btn-bd-download d-lg-inline-block my-2 my-md-0 ms-md-2" href="{{ route('login') }}">登录</a>
             <a class="btn btn-bd-download d-lg-inline-block my-2 my-md-0 ms-md-2 active" href="{{ route('user.signup') }}">注册</a>
           </div>
     </div>
