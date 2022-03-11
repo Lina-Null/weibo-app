@@ -24,19 +24,19 @@
                             {{ csrf_field() }}
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1">名称</span>
-                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control"name="name" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                               </div>
                   
                               <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1">邮箱</span>
-                                <input type="text" class="form-control" placeholder="xxxxx@xxx.xxx" aria-label="email" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" name="email" placeholder="xxxxx@xxx.xxx" aria-label="email" aria-describedby="basic-addon1">
                               </div>
                               <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1">密码</span>
                                 <input type="password" name="password" class="form-control" value="{{ old('password') }}">
                               </div>
                               <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">密码</span>
+                                <span class="input-group-text" id="basic-addon1">确认密码</span>
                                 <input type="password" name="password_confirmation" class="form-control" value="{{ old('password_confirmation') }}">
                               </div>
                             <button type="submit" class="btn btn-bd-download-active ">注册</button>

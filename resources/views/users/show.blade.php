@@ -6,6 +6,7 @@
 @section('content')
 <section  class="p-5 bg-dark text-light text-center text-sm-start">
     <div class="container ">
+        
         <div class="user container-lg">
             <div class="user-img text-center mt-2">
                 <div class="user-header-img">

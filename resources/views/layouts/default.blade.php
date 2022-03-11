@@ -9,7 +9,7 @@
   
       @include('layouts._header')
         
-       
+        @include('shared._messages')
         <section >
                 @yield('content')
           </section> 
