@@ -19,7 +19,8 @@
                            <h5 >注册</h5>
                        </div>
                        <div class="card-body">
-                        <form method="POST" action="{{ route('users.store') }}">
+                        <form method="POST" action="{{ route('users.regEmail') }}">
+                            {{ csrf_field() }}
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1">名称</span>
                                 <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
