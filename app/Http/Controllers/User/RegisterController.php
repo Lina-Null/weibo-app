@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 class RegisterController extends Controller
 {
     //
@@ -25,7 +26,7 @@ class RegisterController extends Controller
             'password'=>bcrypt($req->password),
             'password_show' =>  $req->password
         ]);
-
+        Auth::login($user);    
         session()->flash('success','欢迎，您将在这里开启一段新的旅程');
         return redirect()->route('users.show',[$user]);
     }

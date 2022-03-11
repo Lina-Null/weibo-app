@@ -179,3 +179,9 @@ a{
     border: 1px solid $bg-golden;
     border-radius: 0.25rem;
 }
+.box-s{
+    box-sizing: border-box;
+}
+.user-name .dropdown-toggle::after{
+    margin: 1rem 0rem;
+}
