@@ -9,7 +9,12 @@ class SessionController extends Controller
 {
     //显示登录页
     public function create(){
-        return view('session.create');
+        if(Auth::check()){
+            return redirect()->route('index');
+        }else{
+            return view('session.create');
+        }
+
     }
 
     //登录

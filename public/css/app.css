@@ -12993,7 +12993,7 @@ textarea.form-control-lg {
 body::before {
   display: block;
   content: "";
-  height: 70px;
+  height: 56px;
 }
 
 .nav-border {
