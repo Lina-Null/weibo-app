@@ -18,7 +18,7 @@ Route::get('/help', 'StaticPage\StaticPageController@help');
 Route::get('/about', 'StaticPage\StaticPageController@about');
 
 Route::get('/signup','User\RegisterController@signup')->name('user.signup');
-Route::get('/regEmail','User\RegisterController@regEmail')->name('user.regEmail');
+Route::post('/regEmail','User\RegisterController@regEmail')->name('user.regEmail');
 Route::resource('users','User\UserController');
 /*
 
