@@ -23,7 +23,13 @@
                          <span class="input-group-text" id="basic-addon1">密码</span>
                          <input type="password" name="password" class="form-control" value="{{ old('password') }}">
                        </div>
-                     
+                 
+                      <div class="form-check mb-3 d-flex flex-row bd-highlight">
+                        <input class="form-check-input bd-highlight" type="checkbox"  name="remember" id="flexCheckDefault">
+                        <label class="form-check-label ms-1  bd-highlight" for="flexCheckDefault">
+                         记住我
+                        </label>
+                      </div>
                      <button type="submit" class="btn btn-bd-download-active ">登录</button>
                 </div>
                 <p>还没账号？<a href="{{ route('user.signup') }}">现在注册！</a></p>
