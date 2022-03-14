@@ -37,4 +37,9 @@ class SessionController extends Controller
        // return;
 
     }
+
+    //退出
+    public function destory(){
+
+    }
 }
