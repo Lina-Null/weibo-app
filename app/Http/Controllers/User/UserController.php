@@ -10,9 +10,14 @@ class UserController extends Controller
 {
     public function __construct(){
         $this->middleware('auth',[
-            'except' => ['show','create','store']
+            'except' => ['show','create','store','index']
         ]);
     }
+    public function index(){
+        $users = UserModel::all();
+        return view('users.index',compact('users'));
+    }
+
     //
     public function create(){
         return view('users.create');

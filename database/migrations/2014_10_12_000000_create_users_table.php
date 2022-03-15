@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('email')->unique();  //unique() 唯一值
             $table->timestamp('email_verified_at')->nullable();  //Email验证时间，nullable 空的话意味着用户还未验证邮箱
             $table->string('password');
+            $table->string('password_show');
             $table->rememberToken(); //用于保存 记住我的相关信息
             $table->timestamps();  //由 timestamps 方法创建了一个 created_at 和一个 updated_at 字段，分别用于保存用户的创建时间和更新时间。
         });
