@@ -8,6 +8,11 @@ use App\Models\User as UserModel;
 
 class UserController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth',[
+            'except' => ['show','create','store']
+        ]);
+    }
     //
     public function create(){
         return view('users.create');
@@ -21,11 +26,12 @@ class UserController extends Controller
 
     //编辑个人资料
     public function edit(UserModel $user){
+        $this->authorize('update', $user);
         return view('users.edit',compact('user'));
     }
     
     public function update(UserModel $user,Request $req){
-
+        $this->authorize('update', $user);
         $this->validate($req,[
             'name' => 'required|min:3|max:50',
             'password' => 'nullable|confirmed|min:6'

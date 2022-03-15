@@ -8,6 +8,11 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 class RegisterController extends Controller
 {
+    public function __construct(){
+        $this->middleware('guest',[
+            'only' => ['signup']
+        ]);
+    }
     //
     public function signup(){
         return view('register/register');
