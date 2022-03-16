@@ -20,7 +20,7 @@
                          <input type="text" class="form-control" name="email" value="{{ old('email') }}" placeholder="xxxxx@xxx.xxx" aria-label="email" aria-describedby="basic-addon1">
                        </div>
                        <div class="input-group mb-3">
-                         <span class="input-group-text" id="basic-addon1">密码</span>
+                         <span class="input-group-text" id="basic-addon1">密码（<a href="{{ route('password.request') }}">忘记密码</a>）</span>
                          <input type="password" name="password" class="form-control" value="{{ old('password') }}">
                        </div>
                  

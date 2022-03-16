@@ -36,3 +36,9 @@ Route::delete('logout','User\SessionController@destory')->name('logout');//销�
 
 //日志形式 发送激活令牌
 Route::get('signup/confirm/{token}','User\RegisterController@confirmEmail')->name('confirm_email');
+
+Route::get('password/reset',  'User\PasswordController@showLinkRequestForm')->name('password.request');
+Route::post('password/email',  'User\PasswordController@sendResetLinkEmail')->name('password.email');
+
+Route::get('password/reset/{token}',  'User\PasswordController@showResetForm')->name('password.reset');
+Route::post('password/reset',  'User\PasswordController@reset')->name('password.update');
