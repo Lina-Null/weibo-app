@@ -61,4 +61,13 @@ class UserController extends Controller
 
         return redirect()->route('users.show',$user->id);
     }
+
+    public function destroy(UserModel $user){
+        //UserPolicy里面destory方法中 只能时is_admin用户才能删除 且不能删除自己
+        $this->authorize('destory',$user);
+        $user->delete();
+        session()->flash('success','成功删除用户！');
+        return back();
+
+    }
 }
