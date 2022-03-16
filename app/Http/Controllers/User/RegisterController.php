@@ -14,6 +14,9 @@ class RegisterController extends Controller
         $this->middleware('guest',[
             'only' => ['signup']
         ]);
+        $this->middleware('throttle:10,60',[
+            'only' => ['regEmail']
+        ]);
     //     $this->middleware('auth',[
     //         'except'=>['confirmEmail']
     //     ]);
