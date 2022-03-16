@@ -8,15 +8,13 @@
             <h2 class="mb-4 text-center">所有用户</h2>
             <div class="list-group list-group-flush">
                 @foreach($users as $user)
-                    <div class="list-group-item">
-                        <img class="mr-3" src="{{url('img/123.png')}}" alt="" style="width:60px;height: auto;">
-                        <a href="{{ route('users.show',$user)}}">
-                            {{ $user->name }}
-                        </a>
-                    </div>
+                  @include('users._users')
                 @endforeach
             </div>
 
+            <div class="mt-3 d-flex justify-content-center">
+                {!! $users->render() !!}
+            </div>
 
 
         </div>
