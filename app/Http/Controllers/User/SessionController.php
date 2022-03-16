@@ -33,9 +33,17 @@ class SessionController extends Controller
 
         if(Auth::attempt($credentials,$req->has('remember'))){
             //登录成功后的相关操作
-            session()->flash('success','欢迎回来');
-            $fallback = route('users.show',Auth::user());
-            return redirect()->intended($fallback);
+            if(Auth::user()->activated){
+                session()->flash('success','欢迎回来');
+                $fallback = route('users.show',Auth::user());
+                return redirect()->intended($fallback);
+            }else{
+                
+                Auth::logout();
+                session()->flash('warning',"您的帐号未激活，请检查邮箱中的注册邮件进行激活！");
+                return redirect("/");
+            }
+            
            // return redirect()->route('users.show',[Auth::user()]);
         }else{
             //登录失败后的相关操作

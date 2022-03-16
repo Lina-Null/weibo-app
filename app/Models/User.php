@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory; //模型工厂相关功�
 use Illuminate\Foundation\Auth\User as Authenticatable; // 授权相关的功能引用
 use Illuminate\Notifications\Notifiable;  //消息通知相关的功能引用
 use Laravel\Sanctum\HasApiTokens;  //API令牌修改功能
+use Illuminate\Support\Str;
 
 class User extends Authenticatable
 {
@@ -47,6 +48,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public static function boot(){
+        parent::boot();
+        static::creating(function ($user){
+            $user->activation_token = Str::random(10);
+        });
+    }
 
     //获取用户头像
     /*
@@ -55,4 +62,6 @@ class User extends Authenticatable
         return "https://cdn.v2ex.com/gravatar/$hash?s=$size";
     }
     */
+
+
 }
