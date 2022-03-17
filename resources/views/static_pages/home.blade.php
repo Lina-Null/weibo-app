@@ -357,6 +357,12 @@
         <div class="sendTextBox">
           @include('shared._status_form')
         </div>
+
+        <h4 class="text-danger text-center mt-3">博客列表</h4>
+        <div class="textBox">
+          @include('shared._feed')
+        </div>
     </div>
   </section>
+
   @stop

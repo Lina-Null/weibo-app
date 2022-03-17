@@ -44,7 +44,7 @@
                     @include('statuses._status')
                 @endforeach
             </ul>
-            <div class="mt-5">
+            <div class="mt-5 d-flex justify-content-center">
                 {!! $statuses->render() !!}
             </div>
             @else 
