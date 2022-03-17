@@ -13180,3 +13180,9 @@ a {
 .user-name .dropdown-toggle::after {
   margin: 1rem 0rem;
 }
+
+.status-delete-btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
