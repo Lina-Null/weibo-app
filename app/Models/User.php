@@ -8,7 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable; // 授权相关的功能
 use Illuminate\Notifications\Notifiable;  //消息通知相关的功能引用
 use Laravel\Sanctum\HasApiTokens;  //API令牌修改功能
 use Illuminate\Support\Str;
-
+//use App\Models\Status;
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
@@ -62,6 +62,11 @@ class User extends Authenticatable
         return "https://cdn.v2ex.com/gravatar/$hash?s=$size";
     }
     */
+
+    //一个用户拥有多条微博
+    public function statuses(){
+        return $this->hasMany(Status::class);
+    }
 
 
 }
