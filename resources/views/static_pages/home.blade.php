@@ -352,4 +352,11 @@
 
   </section>
 
+  <section class="p-5 bg-golden">
+    <div class="container">
+        <div class="sendTextBox">
+          @include('shared._status_form')
+        </div>
+    </div>
+  </section>
   @stop
