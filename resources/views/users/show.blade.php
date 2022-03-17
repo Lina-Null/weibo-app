@@ -11,12 +11,9 @@
             <div class="user-img text-center mt-2">
                 <div class="user-header-img">
                         <img src="{{url('img/123.png')}}" alt="" style="width: 240px;height: auto;">
-                        
                 </div>
-                <button class="btn btn-bd-download mt-3">换头像</button>
-                
+                <button class="btn btn-bd-download mt-3">换头像</button>                
             </div>
-
             <div class="user-name mt-3 p-5">
                 <div class="user-desc">
                     <span>嗨！</span>
@@ -30,12 +27,32 @@
                 <div class="admin-desc text-info mt-3 ">
                     Weibo-App致力于向用户提供高质量的资源。同时十分荣幸与你在这里相遇，愿以后的路，我们彼此扶持，共勉共进，我尽我最大努力帮助您节省更多时间，早点具备在职场抓住机会的能力；年轻无极限，青春却短暂，也请你不要偷懒，好好努力。
                 </div>
-                
             </div>
         </div>
        
     </div>
 </section>
-
+<section class="bg-dark text-light">
+    <div class="container">
+        <div class="weibo-header text-center pt-3">
+            <h5 class="text-golden">发布的博客</h5>
+        </div>
+        <div class="user-weibo mt-3 p-5">
+            @if($statuses->count() > 0 )
+            <ul class="list-unstyled">
+                @foreach($statuses as $status)
+                    @include('statuses._status')
+                @endforeach
+            </ul>
+            <div class="mt-5">
+                {!! $statuses->render() !!}
+            </div>
+            @else 
+            <p class="text-center text-info"> 没有数据！</p>
+            @endif   
+        </div>
+    </div>
+    
+</section>
  
 @stop

@@ -27,7 +27,10 @@ class UserController extends Controller
     //
     public function show(UserModel $user){
         //dump($user);
-        return view('users.show',compact('user'));
+        $statuses = $user->statuses()
+                    ->orderBy('created_at','desc')
+                    ->paginate(10);
+        return view('users.show',compact('user','statuses'));
     }
 
     //编辑个人资料
